@@ -1,28 +1,52 @@
 // SHEET: will contain the fetch requests, headings, and will pass the fetched data into the list components.
 
-import React from "react";
+import React , { useState , useEffect } from "react";
 import List from "../List";
 
+function Sheet() { 
 
-function Sheet() {
 
-// ** PLACEHOLDER VARIABLES: here I'm planning how I'll be organising the fetched data into a clean structure.
-  const prodTitle = "title fetch goes here";
-  const prodDate = "date fetch goes here";
-  const prodDescr = "description fetch goes here";
-// **
+// FETCH REQUEST
+        const [data , setData] = useState(null);
 
-// FETCH REQUESTS WILL GO HERE
+        useEffect( () => {
+            async function fetchData() {
+            const response = await fetch (`https://www.roh.org.uk/api/event-details?slug=turandot-by-andrei-serban`);
+            const {data} = await response.json();
+
+            setData(data);
+            
+            }    
+            fetchData()
+            .catch(console.error);
+
+        //eslint-disable-next-line
+        },[])
+        
+        // Displays loading status whilst the fetch function is being called
+        if(!data){
+            return <p>Loading...</p>
+        };
+        
+        console.log(data);
+
+
+    // Storing the fetched data in variables
+        const prodTitle = data.attributes.title;
+        const prodDescr = data.attributes.shortDescription;
+
+        const prodDate = "10/03/2023";
+
 
     return (
         <div className="main-sheet-container">
 
             <section className="prod-info-container">
 
-            <h1 className="prod-title-heading">{prodTitle}</h1>
+                <h1 className="prod-title-heading">{prodTitle}</h1>
 
-            <p className="prod-date">Date: {prodDate}</p>
-            <p className="prod-descr">{prodDescr}</p>
+                <p className="prod-date">Date: {prodDate}</p>
+                <p className="prod-descr">{prodDescr}</p>
 
             </section>
 
