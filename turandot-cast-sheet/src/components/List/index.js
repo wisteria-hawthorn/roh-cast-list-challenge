@@ -1,6 +1,7 @@
 // LIST: this will be a reusable unordered list component, capable of displaying any fetched data necessary, and allowing the Cast Sheet to be scalable if any additional lists need to be added in the future.
 
 import React from 'react';
+//eslint-disable-next-line
 import ListItem from '../ListItem';
 
 
