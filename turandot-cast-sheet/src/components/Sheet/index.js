@@ -26,7 +26,6 @@ import './style.css';
 function Sheet() {
     
     /* STATE MANAGEMENT: */
-        const [ activityId , setActivityId ] = useState("");
 
         const [ title , setTitle ] = useState("");
         const [ date , setDate ] = useState("");
@@ -65,8 +64,6 @@ function Sheet() {
 
 
     /* ACCESSING THE DATA & SETTING THE STATE: */
-
-            setActivityId(data.included[14].id);
 
             setTitle(checkTags(data.data.attributes.title));
             setDescr(checkTags(data.data.attributes.shortDescription));
@@ -130,13 +127,6 @@ function Sheet() {
             <h2 className="cast-heading">Cast</h2>
 
                 <List className="cast-list" ListItem={cast ?? []}/>
-
-                <hr></hr>
-
-                <p>FETCH CHECK</p>
-                <p>ACTIVITY ID: {activityId}</p>
-        
-                <hr></hr>
 
             </section>
 
