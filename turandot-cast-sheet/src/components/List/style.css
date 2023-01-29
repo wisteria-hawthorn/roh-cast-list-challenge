@@ -1,16 +1,27 @@
 /* STYLESHEET for LIST comonent */
-li {
 
-display: flex;
-align-content: space-between;
-gap: 15px;
-
-font-family: Verdana , sans-serif;
-color: #010203;
-padding-top: 5px;
-margin: 0px;
-white-space: nowrap;
+.list-spacer {
+   
+    border-bottom: dotted 0.5px #010203;
+    width: 80px;
+    height: 10px
+   
 }
+
+li {
+    display: flex;
+    align-content: space-between;
+    gap: 15px;
+    
+    letter-spacing: 0.3px;
+    padding-top: 5px;
+    margin: 0px;
+    white-space: nowrap;
+
+    font-size: 1em;
+
+    }
+
 /* CONTAINERS & DIVS */
 
 .ul-container {
@@ -20,8 +31,9 @@ white-space: nowrap;
     min-width: 6em;
     min-height: 15vh;
 
-    border: solid rgba(255, 192, 203, 0.278);
+    /* border: solid rgba(255, 192, 203, 0.278); */
 
+    
     padding: 0px;
     margin: 0px;
 
@@ -37,7 +49,7 @@ white-space: nowrap;
     flex-wrap: nowrap;
 
     list-style: none;
-    border: solid rgba(0, 0, 0, 0.296);
+    /* border: solid rgba(0, 0, 0, 0.296); */
 
     padding: 0px;
 
@@ -51,29 +63,29 @@ white-space: nowrap;
 };
 
 
-.list-spacer {
-   
-    font-size: 0.5px;
-   
-}
 
 .the-role {
-    border: solid rgba(0, 128, 0, 0.241);
+    /* border: solid rgba(0, 128, 0, 0.241); */
 
-    font-size: 0.8em;
     text-align: left;
 
-    font-weight: 200;
+    font-family: "Proxima Nova" , sans-serif;
+    color: #010203;
+
+    font-weight: 200 !important;
     padding-right: 3px;
     
 }
 
-.the-person {
-    border: solid rgba(0, 128, 0, 0.191);
-    font-size: 0.8em;
 
+.the-person {
+    /* border: solid rgba(0, 128, 0, 0.191); */
+    
     text-align: right;
 
-    font-weight: bold;
+    font-family: "Proxima Nova" , sans-serif;
+    color: #010203;
+
+    font-weight: 800 !important;
     padding-left: 3px;
 }

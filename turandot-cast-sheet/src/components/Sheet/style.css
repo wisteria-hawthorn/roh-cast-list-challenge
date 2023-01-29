@@ -2,7 +2,7 @@
 
 body {
 /* From the ROH Branding Guidelines PDF */
-font-family: Verdana , sans-serif;
+font-family: "Proxima Nova" , sans-serif;
 color: #010203;
 
 display: flex;
@@ -31,7 +31,7 @@ justify-content: flex-start;
     margin-left: 16px;
     margin-right: 16px;
 
-    border: solid 10px rgba(231, 17, 17, 0.148);
+    /* border: solid 10px rgba(231, 17, 17, 0.148); */
 
 }
 
@@ -44,7 +44,7 @@ justify-content: flex-start;
 
     margin-top: 8px;
 
-    border: solid rgba(0, 128, 0, 0.102);
+    /* border: solid rgba(0, 128, 0, 0.102); */
 
     width: 80vw;
     min-width: 80%;
@@ -54,7 +54,7 @@ justify-content: flex-start;
 
 .creatives-container {
 
-    border: solid rgba(0, 0, 255, 0.232);
+    /* border: solid rgba(0, 0, 255, 0.232); */
   
     width: 80vw;
     padding-bottom: 8px;
@@ -62,7 +62,7 @@ justify-content: flex-start;
 }
 .cast-container {
 
-    border: solid rgba(0, 0, 255, 0.128);
+    /* border: solid rgba(0, 0, 255, 0.128); */
  
     width: 80vw;
     padding-bottom: 8px;
@@ -76,7 +76,7 @@ justify-content: flex-start;
     margin: 0;
     text-transform: uppercase;
     font-size: max(1.5em, 60px);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2.5px;
     
 }
@@ -97,6 +97,7 @@ justify-content: flex-start;
 
     font-size: 1em;
     font-weight: 200;
+    letter-spacing: 0.3px;
 
     padding-top: 5px;
     padding-bottom: 5px;
@@ -108,7 +109,7 @@ justify-content: flex-start;
     text-transform: uppercase;
     font-size: max(2em, 10px);
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.6px;
 
 }
 
@@ -118,6 +119,6 @@ justify-content: flex-start;
     text-transform: uppercase;
     font-size: max(2em, 10px);
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.6px;
 
 }
