@@ -3,19 +3,25 @@
 import React from 'react';
 //eslint-disable-next-line
 
+import './style.css';
+
 
 export default function List({ ListItem }) {
 
 // TODO: - if two results contain the same "role" value (e.g. Libretto), render them together with a comma?
 // TODO: - each li should have a unique key
 
+let spacerText = "............."
+
 return(
     <div className="ul-container">
-      <ul>
+      <ul className="unordered-list">
         {ListItem.map((item) => {
           return (
-            <li>
-              {item.role} <span>-</span> {item.name}
+            <li className="the-list-item">
+              <span className="the-role">{item.role}</span>
+               <span aria-hidden="true" className="list-spacer">{spacerText}</span>
+               <span className="the-person">{item.name}</span>
             </li>
           );
         })}

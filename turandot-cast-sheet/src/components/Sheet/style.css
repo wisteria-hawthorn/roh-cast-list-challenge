@@ -1,0 +1,123 @@
+/* STYLESHEET for SHEET component */
+
+body {
+/* From the ROH Branding Guidelines PDF */
+font-family: Verdana , sans-serif;
+color: #010203;
+
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+
+}
+
+
+/* DIVS & CONTAINERS */
+.main-sheet-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    max-width: 100vw;
+    min-width: 500px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    border: solid 10px rgba(231, 17, 17, 0.148);
+
+}
+
+.prod-info-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-top: 8px;
+
+    border: solid rgba(0, 128, 0, 0.102);
+
+    width: 80vw;
+    min-width: 80%;
+
+}
+
+
+.creatives-container {
+
+    border: solid rgba(0, 0, 255, 0.232);
+  
+    width: 80vw;
+    padding-bottom: 8px;
+
+}
+.cast-container {
+
+    border: solid rgba(0, 0, 255, 0.128);
+ 
+    width: 80vw;
+    padding-bottom: 8px;
+
+}
+
+/* COMPONENTS */
+
+.prod-title-heading {
+
+    margin: 0;
+    text-transform: uppercase;
+    font-size: max(1.5em, 60px);
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    
+}
+
+.prod-date {
+
+    margin: 0;
+    text-transform: uppercase;
+    font-size: max(1em, 6px);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+
+}
+
+.prod-descr {
+
+    margin: 0;
+
+    font-size: 1em;
+    font-weight: 200;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.creatives-heading {
+
+    margin: 0;
+    text-transform: uppercase;
+    font-size: max(2em, 10px);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+}
+
+.cast-heading {
+
+    margin: 0;
+    text-transform: uppercase;
+    font-size: max(2em, 10px);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+}
