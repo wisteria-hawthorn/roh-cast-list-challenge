@@ -114,3 +114,11 @@ justify-content: flex-start;
     letter-spacing: 1.6px;
 
 }
+
+.loading {
+
+    text-transform: uppercase;
+    font-size: 20px;
+    align-self: center;
+
+}
