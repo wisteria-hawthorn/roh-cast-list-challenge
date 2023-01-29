@@ -5,24 +5,22 @@ import React from 'react';
 import ListItem from '../ListItem';
 
 
-export default function List({ListItem}) {
+export default function List({ ListItem }) {
 
-/* LIST: 
-- .map to render as many <li> (ListItem) as needed
+// TODO: - if two results contain the same "role" value (e.g. Libretto), render them together with a comma?
+// TODO: - each li should have a unique key
 
-ALSO CONSIDER:
-// - if two results contain the same "role" value (e.g. Libretto), render them together with a comma?
-
-*/
-
-// WIP, testing:
 return(
     <div className="ul-container">
-        <ul>
-            <li>{ListItem}</li>
-            <li>result2 (role)</li>
-            <li>result3 (role)</li>
-        </ul>
+      <ul>
+        {ListItem.map((item) => {
+          return (
+            <li>
+              {item.role} <span>-</span> {item.name}
+            </li>
+          );
+        })}
+      </ul>
     </div>
-);
+  );
 };
