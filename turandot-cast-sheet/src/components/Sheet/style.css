@@ -2,7 +2,7 @@
 
 body {
 /* From the ROH Branding Guidelines PDF */
-font-family: "Proxima Nova" , sans-serif;
+font-family: Verdana , sans-serif;
 color: #010203;
 
 display: flex;
@@ -31,8 +31,6 @@ justify-content: flex-start;
     margin-left: 16px;
     margin-right: 16px;
 
-    /* border: solid 10px rgba(231, 17, 17, 0.148); */
-
 }
 
 .prod-info-container {
@@ -44,8 +42,6 @@ justify-content: flex-start;
 
     margin-top: 8px;
 
-    /* border: solid rgba(0, 128, 0, 0.102); */
-
     width: 80vw;
     min-width: 80%;
 
@@ -54,15 +50,11 @@ justify-content: flex-start;
 
 .creatives-container {
 
-    /* border: solid rgba(0, 0, 255, 0.232); */
-  
     width: 80vw;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 
 }
 .cast-container {
-
-    /* border: solid rgba(0, 0, 255, 0.128); */
  
     width: 80vw;
     padding-bottom: 8px;

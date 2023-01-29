@@ -1,14 +1,23 @@
-/* STYLESHEET for LIST comonent */
+/* STYLESHEET for LIST component */
+
+body {
+
+    /* From the ROH Branding Guidelines PDF */
+    font-family: Verdana, sans-serif;
+    color: #010203;
+
+}
 
 .list-spacer {
    
     border-bottom: dotted 0.5px #010203;
     width: 80px;
     height: 10px
-   
+      
 }
 
 li {
+
     display: flex;
     align-content: space-between;
     gap: 15px;
@@ -22,7 +31,23 @@ li {
 
     }
 
-/* CONTAINERS & DIVS */
+    .the-role {
+
+        font-weight: 200 !important;
+        padding-right: 3px;
+        
+        text-align: left;
+    }
+    
+    
+    .the-person {
+      
+        font-weight: 500 !important;
+        padding-left: 3px;
+    
+        text-align: right;
+    }
+    
 
 .ul-container {
     
@@ -30,16 +55,13 @@ li {
     
     min-width: 6em;
     min-height: 15vh;
-
-    /* border: solid rgba(255, 192, 203, 0.278); */
-
     
     padding: 0px;
     margin: 0px;
 
 }
 
-/* ITEMS */
+
 
 .unordered-list {
 
@@ -49,14 +71,11 @@ li {
     flex-wrap: nowrap;
 
     list-style: none;
-    /* border: solid rgba(0, 0, 0, 0.296); */
 
     padding: 0px;
-
     margin: 0px;
-    
+
     width: 100%;
-    
     min-width: 6em;
     min-height: 15vh;
 
@@ -64,28 +83,3 @@ li {
 
 
 
-.the-role {
-    /* border: solid rgba(0, 128, 0, 0.241); */
-
-    text-align: left;
-
-    font-family: "Proxima Nova" , sans-serif;
-    color: #010203;
-
-    font-weight: 200 !important;
-    padding-right: 3px;
-    
-}
-
-
-.the-person {
-    /* border: solid rgba(0, 128, 0, 0.191); */
-    
-    text-align: right;
-
-    font-family: "Proxima Nova" , sans-serif;
-    color: #010203;
-
-    font-weight: 800 !important;
-    padding-left: 3px;
-}
