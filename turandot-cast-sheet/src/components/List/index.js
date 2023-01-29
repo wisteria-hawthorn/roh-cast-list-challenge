@@ -2,7 +2,6 @@
 
 import React from 'react';
 //eslint-disable-next-line
-import ListItem from '../ListItem';
 
 
 export default function List({ ListItem }) {
