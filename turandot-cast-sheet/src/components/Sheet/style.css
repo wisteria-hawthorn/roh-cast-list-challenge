@@ -1,13 +1,16 @@
 /* STYLESHEET for SHEET component */
+:root {
+    --richBlack: #010203
+}
 
 body {
-/* From the ROH Branding Guidelines PDF */
-font-family: Verdana , sans-serif;
-color: #010203;
+    /* NOTE: Used Verdana, but correct font-weights were unavailable */
+    font-family: "Proxima Nova", sans-serif;
+    color: var(--richBlack);
 
-display: flex;
-align-items: flex-start;
-justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 
 }
 
@@ -88,7 +91,7 @@ justify-content: flex-start;
     margin: 0;
 
     font-size: 1em;
-    font-weight: 200;
+    font-weight: lighter;
     letter-spacing: 0.3px;
 
     padding-top: 5px;
