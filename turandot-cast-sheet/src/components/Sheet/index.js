@@ -1,6 +1,7 @@
 // SHEET: will contain the fetch requests, headings, and will pass the fetched data into the list components.
 
 import React , { useState , useEffect } from "react";
+
 import List from "../List";
 
 import './style.css';
@@ -17,7 +18,7 @@ import './style.css';
     if (newArray.length > 0) {
       validCastIds = newArray[0].relationships?.cast?.data?.map((castMem) => castMem.id);
     };
-    console.log(newArray)
+
     return validCastIds;
   };
   
@@ -51,7 +52,7 @@ function Sheet() {
             }
             }
         
-
+            
           
     /* FETCH REQUEST: */
         useEffect( () => {
@@ -60,7 +61,6 @@ function Sheet() {
             );
         
             const data = await response.json();
-            console.log(data);
 
 
     /* ACCESSING THE DATA & SETTING THE STATE: */
@@ -92,9 +92,10 @@ function Sheet() {
 
 
     /* MISC: */
-            // TODO: refactor (date format):
-            let displayDate = removeTime(date);
-            // displayDate.Intl.DateTimeFormat("en-GB" , {dateStyle: "full"});
+            // Reformatted date: calling the function to remove excess from the date, creating a new object from this date string, and using toLocaleDateString to format it to the UK standard.
+            let choppedDate = removeTime(date);
+            let newDate = new Date(choppedDate);
+            let displayDate = newDate.toLocaleDateString("en-GB", {day: "2-digit", month: "2-digit", year: "numeric"});
 
             // Displays loading status whilst the fetch function is being called.
             if(!title){
