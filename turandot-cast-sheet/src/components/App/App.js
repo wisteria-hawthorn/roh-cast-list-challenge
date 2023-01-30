@@ -1,9 +1,13 @@
+import React from 'react';
+import Sheet from '../Sheet';
 import './App.css';
 
+
 function App() {
+
   return (
     <div className="App">
-      <h1>components here</h1>
+      <Sheet />
     </div>
   );
 }

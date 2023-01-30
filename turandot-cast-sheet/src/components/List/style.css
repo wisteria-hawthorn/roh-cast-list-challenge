@@ -1,0 +1,94 @@
+/* STYLESHEET for LIST component */
+:root {
+    --richBlack: #010203
+}
+
+ body {
+
+    /* NOTE: Used Verdana, but correct font-weights were unavailable */
+    font-family: "Proxima Nova", sans-serif;    
+    color: var(--richBlack);
+
+}
+
+.list-spacer {
+   
+    border-bottom: dotted 0.5px var(--richBlack);
+    width: 80px;
+    height: 10px
+   
+}
+
+li {
+    display: flex;
+    align-content: space-between;
+    gap: 15px;
+    
+    letter-spacing: 0.3px;
+    padding-top: 5px;
+    margin: 0px;
+    white-space: nowrap;
+
+    font-size: 1em;
+
+    }
+
+    .the-role {
+
+        /* TODO: install more weights for Verdana? */
+        font-weight: lighter !important;
+        padding-right: 3px;
+        
+        text-align: left;
+
+    }
+    
+    
+    .the-person {
+      
+        /* TODO: install more weights for Verdana? */
+        font-weight: 500 !important;
+        padding-left: 3px;
+    
+        text-align: right;
+    }
+    
+
+.ul-container {
+    
+    width: auto;
+    
+    min-width: 6em;
+    min-height: 15vh;
+    
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.unordered-list {
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+
+    list-style: none;
+
+    padding: 0px;
+    margin: 0px;
+
+    width: 100%;
+    min-width: 6em;
+    min-height: 15vh;
+
+};
+
+
+
+
+
+
+
+
