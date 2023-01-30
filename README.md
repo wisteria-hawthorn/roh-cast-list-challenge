@@ -85,9 +85,8 @@ With all the correct data in place, here's what the [Minimum Viable Project](./r
 I referred to the brief, the example image, and to [existing ROH Cast Sheets](https://www.roh.org.uk/tickets-and-events/40/the-magic-flute-by-david-mcvicar/cast-list/51323) when deciding how to style my project. I happened to find a PDF on [ROH Branding Guidelines](http://static.roh.org.uk/for/pdfs/ROH_GuidelinesSectionA.pdf), and used the recommended [font family, weights, and colours](./readme-images/branding-guidelines-roh.png) wherever possible to add some simple styling, endevouring to match a real-life ROH cast sheet as best I could in the time frame. If I'd had more time, I would have liked to continue improving the styling by adding media queries and controlling the responsiveness of the elements a bit more, as well as improving the alignment of the list items.
 
 - **Accessibility**<br>
-I was very keen to ensure my app's accessibility as much as possible throughout the project. Beyond accessible styling choices, such as font readability, contrast levels, and fallback fonts, I took care in using semantic elements wherever possible, giving each element a semantic class name, and using the correct order of heading hierarchy.
-<br>
-I was faced with an ARIA challenge when creating the List component, as I wanted to add a dotted horizontal line between two `"<p>"` tags. I was attempting to style a `"<span>"` with `border-bottom:dashed` without success, and added a temporary workaround: a string of full-stops ( `"<p>.....</p>"` ). However, I knew that this was bad practice for screen readers. I did some research on `aria-hidden="true` . Whilst I found that it did work when I implimented it, and produced a perfect score on Lighthouse, my research suggested this method shouldn't be used on focusable elements. After some refactoring, I was able to use `border-bottom:dashed` with a `div` element instead. I really valued this process, and I'm very interested in learning more about the best practices of accessiblity.
+I was very keen to ensure my app's accessibility as much as possible throughout the project. Beyond accessible styling choices, such as font readability, contrast levels, and fallback fonts, I took care in using semantic elements wherever possible, giving each element a semantic class name, and using the correct order of heading hierarchy.<br><br>
+I was faced with an ARIA challenge when creating the List component, as I wanted to add a dotted horizontal line between two `<p>` tags. I was attempting to style a `<span>` with `border-bottom:dashed` without success, and added a temporary workaround: a string of full-stops ( `<p>.....</p>` ). However, I knew that this was bad practice for screen readers. I did some research on `aria-hidden="true` . Whilst I found that it did work when I implimented it, and produced a perfect score on Lighthouse, my research suggested this method shouldn't be used on focusable elements. After some refactoring, I was able to use `border-bottom:dashed` with a `div` element instead. I really valued this process, and I'm very interested in learning more about the best practices of accessiblity.
 
 ---
 
@@ -99,11 +98,13 @@ I took some time to refactor some helper functions, including formatting the dat
 - **Stretch Goals**<br>
 
     - sameLine function<br>
-    I noticed on a real-life ROH Cast Sheet that when two or more people with the same creative role are working on one production, their names are displayed on one line, separated by a comma [(example)](./readme-images/same-role-creatives-roh.png). I wanted to refactor my list function to return an element in this format if the same role was present in two places within the object.
+    I noticed on a real-life ROH Cast Sheet that when two or more people with the same creative role are working on one production, their names are displayed on one line, separated by a comma [(example)](./readme-images/same-role-creatives-roh.png). I would like to refactor my list function to return an element in this format if the same role was present in two places within the object.
 
     - `dangerouslySetInnerHTML`<br>
-    After discovering a few `"<p>"` tags included in the JSON object, I wanted to know if there was a more efficient method of removing them than the checkTags function I created (removes the first 3 and the last 4 characters of the string if `"<p>"` is included). I found out about `"dangerouslySetInnerHTML"`, the React alternative to setting `"innerHTML"`. Implementing this would allow me to display the string whilst running any HTML present within it. As the name "dangerously" suggests, this has some security risks, and I decided not to impliment this until I learn more about it in the near future.
+    After discovering a few `<p>` tags included in the JSON object, I wanted to know if there was a more efficient method of removing them than the checkTags function I created (removes the first 3 and the last 4 characters of the string if `<p>` is included). I found out about `dangerouslySetInnerHTML`, the React alternative to setting `"innerHTML"`. Implementing this would allow me to display the string whilst running any HTML present within it. As the name "dangerously" suggests, this has some security risks, and I decided not to impliment this until I learn more about it in the near future.
+    
     - [Improved Responsive Styling](#styling)
+    
     - [Unit Test](#unittest)
 
 <br>
@@ -116,6 +117,6 @@ I took some time to refactor some helper functions, including formatting the dat
 
 ---
 
-*Many thanks again for reviewing my application!<br> - **Mari Lovell***
+*Many thanks again for reviewing my application!*
 
 ---
